@@ -35,7 +35,7 @@ body {
   position:relative;
   display: flex;
   width: 90%;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   z-index: 1;
   
@@ -63,6 +63,17 @@ form {
   font-size: xx-large;
   height: 74px;
   resize: none;
+}
+
+.errorMessage {
+  position: absolute;
+  border: red solid 4px;
+  width: 90%;
+
+  position: relative;
+    display: flex;
+    justify-content: center;
+    top: 120px;
 }
 
 

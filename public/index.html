@@ -58,19 +58,22 @@
   </header>
 
   <!-- Page-specific (main) content here -->
+<section class="errorMessageContainer"></section>
+  <section class="new-tweet">
+    <form id="submit-tweet">
+      <label for="tweet-text" ></label>
+      <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+      <br>
+      <div id="belowTweet">
+        <button id="tweet-button">Tweet</button>
+        <output id="output-text" name="counter" class="counter" for="tweet-text">140</output>
+      </div>
+    </form>
+  </section>
+
   <main id="container">
 
-      <section class="new-tweet">
-        <form id="submit-tweet">
-          <label for="tweet-text" ></label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <br>
-          <div id="belowTweet">
-            <button id="tweet-button">Tweet</button>
-            <output id="output-text" name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+     
 <br>
      
     </main>

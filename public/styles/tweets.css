@@ -1,0 +1,29 @@
+.tweets {
+  position:relative;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  border: solid black;
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.tweet-body {
+  display: flex;
+  width: 90%;
+  border-bottom: 5px solid black;
+}
+
+footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}

@@ -1,0 +1,12 @@
+#topHeader {
+  position: relative;
+  top: 105px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: tan;
+  background-image: url("../images/60-lines.png");
+}

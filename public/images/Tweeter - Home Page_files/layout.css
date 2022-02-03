@@ -20,10 +20,6 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -31,38 +27,11 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- #container {
+ .container {
   position:relative;
-  display: flex;
   width: 90%;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 1;
-  
-}
-
-#belowTweet {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 3;
 }
-
-#tweet-button {
-  font-family: 'Bungee', cursive;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 20px;
-}
-#tweet-text {
-  border: none;
-  border-bottom: 5px solid black;
-  background:transparent;
-  outline:none;
-  font-size: xx-large;
-  height: 74px;
-  resize: none;
-}
-
 

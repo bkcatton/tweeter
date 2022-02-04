@@ -48,7 +48,14 @@ body {
 
 #tweet-button {
   font-family: 'Bungee', cursive;
+  color: #FFFFFF;
+  background-color: #4056A1;
 }
+
+#output-text {
+  font-family: 'Bungee', cursive;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -68,12 +75,18 @@ form {
 .errorMessage {
   position: absolute;
   border: red solid 4px;
-  width: 90%;
-
   position: relative;
     display: flex;
-    justify-content: center;
-    top: 120px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.errorMessageContainer {
+  width: 90%;
+  position: relative;
+  top: 120px;
 }
 
 

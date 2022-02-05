@@ -16,7 +16,11 @@ $(document).ready(function () {
     const $errorMessageContainer = $('.errorMessageContainer');
     $errorMessageContainer.empty();
     $allTweets.empty();
-    
+
+    //reset the character count form
+    const $outputField = $('#output-text');
+    $outputField.html('140');
+
     for (let tweet of tweets) {
       const $anotherTweet = $createTweets(tweet);
       $allTweets.append($anotherTweet);
@@ -25,10 +29,13 @@ $(document).ready(function () {
 //createTweets adds all of the html
   const $createTweets = (tweet) => {
     //creates a tweet based on data present
-    const $likeRetweet = $('<output>').text('flag, retweet');
+    const $flag = $('<i>').addClass("fas fa-flag");
+    const $like = $('<i>').addClass("fas fa-heart");
+    const $retweet = $('<i>').addClass("fas fa-retweet");
+    const $icons = $('<div>').append($flag, $retweet, $like )
     const $date = $('<output>').text(timeago.format(tweet['created_at']));
     const $footer = $('<footer>').addClass('footer');
-    $footer.append($date, $likeRetweet);
+    $footer.append($date, $icons);
 
     const $textBody = $('<p>').text(tweet['content']['text']);
     const $border = $('<hr>');
@@ -37,8 +44,11 @@ $(document).ready(function () {
 
     const $avatar = $('<img>').attr("src", tweet['user']['avatars']);
     const $handle = $('<h5>').text(tweet['user']['handle']);
+    const $name = $('<h4>').text(tweet['user']['name']);
+    const $avName = $('<div>').addClass('avName');
+    $avName.append($avatar, $name);
     const $header = $('<header>');
-    $header.append($avatar, $handle);
+    $header.append($avName, $handle);
 
     const $fullTweet = $('<article>').addClass('tweets');
     $fullTweet.append($header, $tweetBody, $footer);
@@ -80,7 +90,7 @@ $(document).ready(function () {
     if (inputLength <= 0 || inputLength > 140) {
       
       const $errorMessageContainer = $('.errorMessageContainer');
-      const $errorMessage = $('<h5>').text("Error too many or not enough cvhars").addClass('errorMessage');
+      const $errorMessage = $('<h5>').text("Must be between 1 and 140 characters").addClass('errorMessage');
 
       $errorMessageContainer.empty();
       $errorMessageContainer.append($errorMessage).slideDown( 100 , function() {

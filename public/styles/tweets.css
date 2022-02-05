@@ -8,6 +8,11 @@
   z-index: 3;
   border: solid black;
   margin: 20px;
+  padding: 20px;
+}
+
+.tweets:hover {
+  box-shadow: 5px 10px;
 }
 
 header {
@@ -26,4 +31,23 @@ footer {
   display: flex;
   width: 90%;
   justify-content: space-between;
+}
+
+.avName {
+  display: flex;
+  flex-direction: row;
+}
+
+.avName > img {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+;}
+
+.footer > div > i {
+  margin: 5px;
+}
+
+i:hover {
+  color: rgb(184, 184, 95);
 }

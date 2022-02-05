@@ -23,6 +23,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshot of desktop layout"]
-!["Screenshot of mobile layout"]
+!["Screenshot of desktop layout"](https://github.com/bkcatton/tweeter/blob/master/public/images/screenshots/Desktop%20Layout.png?raw=true)
+!["Screenshot of mobile layout"](https://github.com/bkcatton/tweeter/blob/master/public/images/screenshots/Ipad,%20Mobile%20Layout.png?raw=true)
 
